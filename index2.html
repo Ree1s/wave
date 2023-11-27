@@ -57,39 +57,32 @@
 
 
   <section class="hero">
-    <div class="video-wrapper header">
-
-      <div class="bg-overlay"></div>
-        <video playsinline autoplay muted loop poster="cake.jpg">
-          <source src="./static/videos/banner_video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="xtitle is-1 publication-title">Academic Project Page</h1>
+            <h1 class="xtitle is-1 publication-title">WAVE: Warping DDIM Inversion Features for Zero-shot Text-to-Video Editing
+            </h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup></span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous 6528</a></span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup></span>
+                  <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup></span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a> -->
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link ">
                         <span class="icon">
@@ -97,10 +90,10 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link ">
                       <span class="icon">
@@ -108,10 +101,10 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link ">
                     <span class="icon">
@@ -119,23 +112,22 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link ">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv</span> -->
                 </a>
               </span>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </div>
 </section>
@@ -149,7 +141,7 @@
 			<div class="marquee-inner to-left">
 				<span>
 					<div class="marquee-item">
-            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+            <img src="static/12fps/boat/fatezero.mp4" alt="MY ALT TEXT"/>
 						<p class="text-white">1</p>
 					</div>
 					<div class="marquee-item">
@@ -207,7 +199,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2>
     </div>
   </div>
@@ -222,7 +214,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Text to video editing has emerged as a prominent application based on the breakthroughs of image diffusion models. Existing state-of-the-art methods focus on zero-shot frameworks due to limited training data and to limit computational expense. To preserve structure consistency, previous frameworks usually employ Denoising Diffusion Implicit Model (DDIM) inversion to provide inverted noise latents as guidance. The key challenge lies in limiting errors caused by the randomness and inaccuracy in each step of the in the naive DDIM inversion process, which can lead to temporal inconsistency in video editing tasks. Our observation indicates that incorporating temporal keyframe information can alleviate the accumulated error during inversion. In this paper, we propose an effective warping strategy in the feature domain to obtain high-quality DDIM inverted noise latents. Specifically, we shuffle the editing frames randomly in each timestep and use optical flow extracted from the source video to propagate the latent features of the first keyframe to subsequent keyframes. Moreover, we develop a comprehensive zero-shot framework that adapts to this strategy in both the inversion and denoising processes, thereby facilitating the generation of consistent edited videos.
           </p>
         </div>
       </div>
@@ -282,7 +274,7 @@
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-
+          
           <div class="publication-video">
             <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -329,7 +321,7 @@
 <!-- End video carousel -->
 
 
-<!-- Paper poster
+<!-- Paper poster 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -337,7 +329,7 @@
 
       <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
           </iframe>
-
+        
       </div>
     </div>
   </section>
@@ -373,7 +365,7 @@ End paper poster -->
 </footer>
 
 <!-- Statcounter tracking code -->
-
+  
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
