@@ -287,47 +287,49 @@
         <!-- <li>Gen1 (<a href="#ref-gen1">[3]</a>).</li>  -->
         <!-- <li>Plug-and-Play per frame (<a href="#ref-pnp">[4]</a>).</li>  -->
         <li>Fate-Zero (<a href="#ref-fatezero">[8]</a>)</li>
-        <li>TokenFlow (<a href="#ref-rerender">[10]</a>)</li>
+        <li>TokenFlow (<a href="#ref-tokenflow">[10]</a>)</li>
 </ul>
-    Our msthod manages to preserve the structure of the guidance image while fulfilling the target text. </p>
+    Our method manages to preserve the structure of the guidance image while fulfilling the target text. </p>
 
   <table  width="800" align="center">
         <!-- <th>A</th>
         <th>B</th>
-        <th>C</th> -->
-        <!-- <br/> -->
-        <!-- <tr> <td colspan="8"><br />
+        <th>C</th> 
+        <br/>
+        <tr> <td colspan="8"><br />
           <p align="left"> Wild TI2I (Generated images) </p>
           <hr>
       </td> 
           </tr> -->
-      <tr>
         <tr>
-            <th style="font-family: Chalkduster">"rainbow textured dog"</th>
+        <tr>
+            <th style="font-family: Chalkduster">"A boat"</th>
             <th style="font-size: 16px">Ours</th>
-            <th style="font-size: 16px">Text-to-video (<a href="#ref-txt2vid">[1]</a>)</th>
-            <th style="font-size: 16px">TAV (<a href="#ref-TAV">[2]</a>)</th>
+            <th style="font-size: 16px">Tune-a-video (<a href="#ref-TAV">[1]</a>)</th>
+            <th style="font-size: 16px">Fate-Zero (<a href="#ref-fatezero">[8]</a>)</th>
+            <th style="font-size: 16px">TokenFlow (<a href="#ref-tokenflow">[10]</a>)</th>
         </tr>
 
 
         <tr>
-            <th><a href="assets/poodle/input_fps30.mp4"> <a href="assets/poodle/input_fps30.mp4"> <video  width="224" src="assets/poodle/input_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4" autoplay loop controls muted /> </a> </a></th>
-            <th><a href="assets/poodle/a dog with a rainbow texture/txt2vid_fps30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/txt2vid_fps30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/txt2vid_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-            <th><a href="assets/poodle/a dog with a rainbow texture/tav_fps30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/tav_fps30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/tav_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="static/12fps/boat/input.mp4"> <a href="static/12fps/boat/input.mp4"> <video  width="224" src="static/12fps/boat/input.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="static/12fps/boat/output.mp4"> <a href="static/12fps/boat/output.mp4"> <video  width="224" src="static/12fps/boat/output.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="static/12fps/boat/tune_a_video.mp4"> <a href="static/12fps/boat/tune_a_video.mp4"> <video  width="224" src="static/12fps/boat/tune_a_video.mp4" autoplay loop controls muted /> </a> </a></th>
+            <th><a href="static/12fps/boat/fatezero.mp4"> <a href="static/12fps/boat/fatezero.mp4"> <video  width="224" src="static/12fps/boat/fatezero.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="static/12fps/boat/tokenflow_PnP_fps_30.mp4"> <a href="static/12fps/boat/tokenflow_PnP_fps_30.mp4"> <video  width="224" src="static/12fps/boat/tokenflow_PnP_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
           </tr>
-          <tr>
+          <!-- <tr>
             <th style="font-size: 16px">Gen1 (<a href="#ref-gen1">[3]</a>)</th>
             <th style="font-size: 16px">PnP per frame (<a href="#ref-pnp">[4]</a>)</th>
             <th style="font-size: 16px">Fate-Zero (<a href="#ref-fatezero">[8]</a>)</th>
             <th style="font-size: 16px">Re-render a Video (<a href="#ref-rerender">[10]</a>)</th>
         </tr>
           <tr>
-            <th><a href="assets/poodle/a dog with a rainbow texture/gen1_fps30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/gen1_fps30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/gen1_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
+
             <th><a href="assets/poodle/a dog with a rainbow texture/pnp_per_frame_baseline_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/pnp_per_frame_baseline_fps_30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/pnp_per_frame_baseline_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
             <th><a href="assets/poodle/a dog with a rainbow texture/fatezero_30_fps.mp4"> <a href="assets/poodle/a dog with a rainbow texture/fatezero_30_fps.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/fatezero_30_fps.mp4" autoplay loop controls muted/> </a> </a></th>
             <th><a href="assets/poodle/a dog with a rainbow texture/rerender_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/rerender_fps_30.mp4"> <video  width="224" src="assets/poodle/a dog with a rainbow texture/rerender_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
-        </tr>
+        </tr> -->
       </table>
         <hr>
       
@@ -342,7 +344,7 @@
 
        
         <tr>
-            <th><a href="assets/poodle/input_fps30.mp4"> <a href="assets/stork/input_fps30.mp4"> <video  width="224" src="assets/stork/input_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
+            <th><a href="static/12fps/boat/input.mp4"> <a href="assets/stork/input_fps30.mp4"> <video  width="224" src="assets/stork/input_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
             <th><a href="assets/stork/an origami of a stork/result_fps_30.mp4"> <a href="assets/stork/an origami of a stork/result_fps_30.mp4"> <video  width="224" src="assets/stork/an origami of a stork/result_fps_30.mp4" autoplay loop controls muted /> </a> </a></th>
             <th><a href="assets/stork/an origami of a stork/txt2vid_fps30.mp4"> <a href="assets/stork/an origami of a stork/txt2vid_fps30.mp4"> <video  width="224" src="assets/stork/an origami of a stork/txt2vid_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
             <th><a href="assets/stork/an origami of a stork/tav_fps30.mp4"> <a href="assets/stork/an origami of a stork/tav_fps30.mp4"> <video  width="224" src="assets/stork/an origami of a stork/tav_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
@@ -499,8 +501,8 @@
 
       <!-- </tr>
       <tr>
-          <th><a href="assets/poodle/input_fps30.mp4"> <a href="assets/poodle/input_fps30.mp4"> <video  width="300" src="assets/poodle/input_fps30.mp4" autoplay loop controls muted/> </a> </a></th>
-          <th><a href="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4"> <video  width="300" src="assets/poodle/a dog with a rainbow texture/result_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="static/12fps/boat/input.mp4"> <a href="static/12fps/boat/input.mp4"> <video  width="300" src="static/12fps/boat/input.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="static/12fps/boat/tune_a_video.mp4"> <a href="static/12fps/boat/tune_a_video.mp4"> <video  width="300" src="static/12fps/boat/tune_a_video.mp4" autoplay loop controls muted/> </a> </a></th>
           <th><a href="assets/poodle/a dog with a rainbow texture/non_random_tokenf_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/non_random_tokenf_fps_30.mp4"> <video  width="300" src="assets/poodle/a dog with a rainbow texture/non_random_tokenf_fps_30.mp4" autoplay loop controls muted/> </a> </a></th>
           <th><a href="assets/poodle/a dog with a rainbow texture/extended_attn_random_baseline_fps_30.mp4"> <a href="assets/poodle/a dog with a rainbow texture/extended_attn_random_baseline_fps_30.mp4"> <video  width="300" src="assets/poodle/a dog with a rainbow texture/extended_attn_random_baseline_fps_30.mp4" autoplay loop controls muted/> </a> </a></th> -->
           
