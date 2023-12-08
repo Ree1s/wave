@@ -20,16 +20,38 @@
   <p align="center">&nbsp;</p>
 	<a href="#top"></a>
   <ul>
-	<!-- <li><a href="#our_results_container">Our Results</a></li> -->
+	<li><a href="#our_results_container">Our Results</a></li>
   <!-- <li><a href="#our_results_pp_container">Our Results combined with post-process deflickering</a></li> -->
   <!-- <li><a href="#our_results_others_container">Results of our method with a different image-editing technique</a></li> -->
 	<li><a href="#comparisons_baselines_container">Comparisons to Baselines</a></li>
+	<li><a href="#ddim_inversion_container">DDIM Inversion Comparison</a></li>
     <!-- <li><a href="#additional_qual_comp">Additional Qualitative Comparisons</a></li> -->
     <!-- <li><a href="#Ablations">Ablations</a></li> -->
     <!-- <li><a href="#pca">Diffusion Features PCA Visualizations</a></li> -->
   </ul>
+  <h2 id="our_results_container" align="left"><a name="image-results" id="image-results"></a>Our Results</h2>
+  <p align="left"> We present sample results of our method.
 
-	
+
+    <table  width="800" align="center">
+      <tr>
+      <tr>
+        <th style="font-family: Chalkduster">"Oil Painting of a Camel in the Desert"</th>
+        <th style="font-size: 16px">Ours</th>
+        <th style="font-size: 16px">Tune-a-video (<a href="#ref-TAV">[1]</a>)</th>
+        <th style="font-size: 16px">Fate-Zero (<a href="#ref-fatezero">[2]</a>)</th>
+        <th style="font-size: 16px">TokenFlow (<a href="#ref-tokenflow">[3]</a>)</th>
+        </tr>
+
+     
+      <tr>
+          <th><a href="static/project_page_v2/banner/original.mp4"> <a href="static/project_page_v2/banner/original.mp4"> <video  src="static/project_page_v2/banner/original.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="static/project_page_v2/banner/Will Smith is speaking.mp4"> <a href="static/project_page_v2/banner/Will Smith is speaking.mp4"> <video  src="static/project_page_v2/banner/Will Smith is speaking.mp4" autoplay loop controls muted /> </a> </a></th>
+          <th><a href="static/project_page_v2/banner/Kobe Bryant is speaking.mp4"> <a href="static/project_page_v2/banner/Kobe Bryant is speaking.mp4"> <video  src="static/project_page_v2/banner/Kobe Bryant is speaking.mp4" autoplay loop controls muted/> </a> </a></th>
+          <th><a href="static/project_page_v2/banner/A golden statue of a man is speaking.mp4"> <a href="static/project_page_v2/banner/A golden statue of a man is speaking.mp4"> <video   src="static/project_page_v2/banner/A golden statue of a man is speaking.mp4" autoplay loop controls muted/> </a> </a></th>
+        </tr>
+        
+      </table>
   <h2 id="comparisons_baselines_container" align="left"><a name="image-results" id="image-results"></a>Comparisons to Baselines</h2>
   <p align="left"> Existing methods of text-guided video editing suffer from temporal inconsistency.
     <ul>
