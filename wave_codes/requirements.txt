@@ -1,0 +1,13 @@
+pillow
+diffusers==0.19.1
+ftfy
+transformers
+opencv-python 
+tqdm
+numpy
+pyyaml
+accelerate
+xformers
+tensorboard
+einops
+av

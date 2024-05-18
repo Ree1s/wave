@@ -1,0 +1,25 @@
+
+seed: 1
+device: 'cuda'
+output_path: 'feature_warp_results_group_random'
+
+
+data_path: 'data/woman-running'
+latents_path: 'latents_group_random' 
+n_inversion_steps: 50 
+n_frames: 40
+H: 512
+W: 512
+
+
+sd_version: '1.5'
+guidance_scale: 12.5
+n_timesteps: 50
+prompt: A silver statue of a woman is running
+negative_prompt: "ugly, blurry, low res, unrealistic, unaesthetic"
+batch_size: 8
+
+pnp_attn_t: 0.5
+pnp_f_t: 0.5
+conditioning_scale: 0.5
+strength: 1.0
